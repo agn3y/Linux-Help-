@@ -2,6 +2,21 @@ Expressing Context (For better understanding) :
 
 dr-xr-xr-- => d | r-x | r-x | r--
 
+Permission Table: 
+
+--------------------------------------------------------
+  Number  |   	    Permission Type			|  Symbol  |
+--------------------------------------------------------
+    0     |	    No Permission           	|    —     |
+    1     |	    Execute                 	|    –x    |
+    2     |	    Write                   	|    -w-   |
+    3     |	    Execute + Write         	|    -wx   |
+    4     |	    Read                   	    |    r–    |
+    5     |	    Read + Execute         	    |    r-x   |
+    6     |	    Read + Write             	|    rw-   |
+    7     |	    Read + Write + Execute   	|    rwx   |
+--------------------------------------------------------
+
 to add/remove any permission from group 
 
 $sudo chmod g(+w/-w) "file/directory name"
