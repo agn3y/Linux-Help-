@@ -1,7 +1,3 @@
-Expressing Context (For better understanding) :
-
-dr-xr-xr-- => d | r-x | r-x | r--
-
 Permission Table: 
 
 --------------------------------------------------------
@@ -16,6 +12,10 @@ Permission Table:
     6     |	    Read + Write             	|    rw-   |
     7     |	    Read + Write + Execute   	|    rwx   |
 --------------------------------------------------------
+
+Expressing Context (For better understanding) :
+
+dr-xr-xr-- => d | r-x | r-x | r--
 
 to add/remove any permission from group 
 
