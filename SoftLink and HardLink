@@ -1,0 +1,18 @@
+crete a softlink using
+
+ln 	  = hard link 
+ln -S = softlink 
+
+To create sym link
+
+$ {ln -s /home/shun/myfolder link_to_folder}
+
+To see inode 
+
+$ ln -li
+
+
+Note : 
+
+Hard Links works within same partitions
+WHen we remove source file soft link will also be gone however for hardlink it will not be gone and will have the same content what we used to had in deleted file
