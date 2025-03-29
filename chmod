@@ -1,0 +1,17 @@
+to add/remove any permission from group 
+
+sudo chmod g(+w/-w) "file/directory name"
+
+to apply process on everyone we can use
+
+sudo chmod a(+w/-w) "file/directory name"
+
+
+Note: 
+
+Beacuse we can do operation on or in directory such as navigating thats why there is execute permission there
+
+
+=========================
+Permission using Numerics
+=========================
