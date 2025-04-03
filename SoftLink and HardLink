@@ -11,8 +11,8 @@ To see inode
 
 $ ln -li
 
-
 Note : 
 
 Hard Links works within same partitions
+
 WHen we remove source file soft link will also be gone however for hardlink it will not be gone and will have the same content what we used to had in deleted file
