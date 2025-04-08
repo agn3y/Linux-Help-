@@ -12,6 +12,10 @@ egrep
 
 Same as grep -E — allows advanced patterns (regex).
 
+- use you want to search two keywords
+
+$ egrep -i "keyword1|keyword2" filename (yep no space)
+
 Example:
 
 $ egrep "cat|dog" file.txt
@@ -35,3 +39,18 @@ Option	Description	Example
 -o			Print only matched parts (not full line)		$ grep -o "abc" file.txt
 -E			Use extended regex (same as egrep)	`			$ grep -E "cat
 --color		Highlight matched text							$ grep --color "text" file.txt
+
+
+Some example of commands
+
+$ grep --version					// Prints version
+$ grep "keyword" file				// Finds the full line which is containing keyword
+$ grep -c "keyword" file			// Show number how many times searched keyword is used in there
+$ grep -i "keyword" file			// To nuetralize k sensitivity
+$ grep -n "keyword" file			// show number of line the searched keyword is in
+$ grep -v "keyword" file			// show output without including the line which has the keyword
+
+an advanced command combined with other command
+
+$ grep "agn3y" /etc/passwd | awk -F: '{print $1}'
+
