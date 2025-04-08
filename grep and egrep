@@ -1,0 +1,37 @@
+grep
+
+Used to search for text in files or command output.
+
+Example:
+
+grep "hello" file.txt
+
+- Finds lines that contain "hello".
+
+egrep
+
+Same as grep -E — allows advanced patterns (regex).
+
+Example:
+
+$ egrep "cat|dog" file.txt
+
+Finds lines with either "cat" or "dog".
+
+
+👉 Basic grep Options
+
+Option	Description	Example
+
+-i			Ignore case (a = A)								$ grep -i "hello" file.txt
+-v			Invert match (show lines not matching)			$ grep -v "error" log.txt
+-r or -R	Search recursively in directories				$ grep -r "main" ./code/
+-n			Show line numbers								$ grep -n "word" file.txt
+-c			Count matches per file							$ grep -c "user" file.txt
+-l			Show only file names with matches				$ grep -l "error" *.log
+-L			Show file names without the match				$ grep -L "success" *.log
+-w			Match whole word only							$ grep -w "cat" file.txt
+-x			Match whole line only							$ grep -x "hello" file.txt
+-o			Print only matched parts (not full line)		$ grep -o "abc" file.txt
+-E			Use extended regex (same as egrep)	`			$ grep -E "cat
+--color		Highlight matched text							$ grep --color "text" file.txt
