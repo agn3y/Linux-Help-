@@ -1,15 +1,31 @@
 crete a softlink using
 
-ln 	  = hard link 
-ln -S = softlink 
+ln = Hard Link
 
-To create sym link
+Creates a direct reference to the data on disk.
 
-$ {ln -s /home/shun/myfolder link_to_folder}
+Hard link:
 
-To see inode 
+Works only within the same partition
 
-$ ln -li
+Shares the same inode
+
+If you delete the original file, the hard link still works
+
+You just lose one name, but the file data stays
+
+ln -s = Soft (Symbolic) Link
+
+Creates a shortcut or reference to the path.
+
+Soft link:
+
+Can link across partitions or drives
+
+Has a different inode
+
+If you delete the original file, the soft link breaks (shows as “broken link”)
+
 
 Note : 
 
