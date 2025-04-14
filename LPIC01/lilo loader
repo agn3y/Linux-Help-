@@ -1,10 +1,5 @@
 Bootloader is a program that helps system to load operating system
 
-LILO - Linux Loader
-GRUB (Legacy) - 
-GRUB 2 - 
-
-
 LILO only works with MBR and it cannot handle UEFI
 
 What is LILO?
