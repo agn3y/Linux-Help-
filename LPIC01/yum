@@ -1,6 +1,7 @@
 [*] What is yum?
 
 yum = Yellowdog Updater, Modified
+cahce for pkg is located at - /etc/yum.repos.d/
 
 Used in Red Hat-based Linux systems like:
 
@@ -12,15 +13,15 @@ Fedora (older versions)
 
 yum is a package manager, like a helper tool to manage software on your Linux system
 
----------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 Task					Example									Meaning
----------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 Install software		yum install nano						Installs the text editor "nano"
 Update software			yum update nano							Updates the "nano" package
 Remove software			yum remove nano							Deletes the "nano" package
-List packages			yum list installed or yum list			Shows installed or all packages
+List packages			yum list installed or yum list					Shows installed or all packages
 Search packages			yum search firefox						Looks for packages related to "firefox"
----------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 
 [*] Where does yum get packages from?
 
@@ -53,13 +54,13 @@ It does only one job: download the .rpm file for a package, but does NOT install
 
 [*] Why use yumdownloader?
 
---------------------------------------------------------------------------------------------------
-Situation										Reason
---------------------------------------------------------------------------------------------------
-No internet on another machine					Download .rpm here, copy and install it there
-Manual install									You want to inspect or control how it’s installed
-Backup											Save the .rpm file to reuse later
---------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+Situation				Reason
+-----------------------------------------------------------------------------------------
+No internet on another machine		Download .rpm here, copy and install it there
+Manual install				You want to inspect or control how it’s installed
+Backup					Save the .rpm file to reuse later
+-----------------------------------------------------------------------------------------
 
 [*] How to install yumdownloader?
 
@@ -92,10 +93,35 @@ $ yumdownloader --resolve nano
 
 [*] Summary Table:
 
---------------------------------------------------------------------------
-Tool				Does What?									Installs?
---------------------------------------------------------------------------
-yum					Fetches and installs packages + deps		✅ Yes
-yumdownloader		Only downloads RPM package files			❌ No
---------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Tool			Does What?					Installs?
+---------------------------------------------------------------------------------
+yum			Fetches and installs packages + deps		Yes
+yumdownloader		Only downloads RPM package files		No
+---------------------------------------------------------------------------------
 
+Extra things:
+
+we can user serach to find info about pckgs
+
+$ sudo dnf search nano
+
+and to find more info about it 
+
+$ yum info "pkg name"
+$ yum info "nano.x86_64"
+
+which package provides the nano program
+$ yum provides nano
+
+to see dependency list 
+$ yum deplist nano
+
+to download yumdownloader
+$ yum install yum-utils
+
+use yumdownloader to only download rpm 
+$ sudo yumdownloader nano
+
+to download pkg with its dependencies
+$ sudo yumdownloader --resolve nano // none of them will install it will only download
