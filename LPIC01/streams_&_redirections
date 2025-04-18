@@ -11,3 +11,30 @@ $ cat pancackes 2> filename      	# since the file does not actually exist it wi
 $ cat < filename  			# takes input from file instead of keyboard
 $ cat 0< filename
 
+Example :
+
+$ wc -l << EOF
+> this is agney 
+> how may i help you ?
+> please make it quick
+> we are running out of time
+> ronaldo is the goat
+> messi is also goat
+> neymar is also a magician
+> EOF
+
+Output :
+
+[10:55] agn3y@localhost [~/experimental]  $ wc -l << EOL
+> this is agney
+> how may i help you
+> please make it quick
+> we are running out of time
+> ronaldo is goat
+> messi is also goat
+> neymar is also a magician 
+> EOL
+7
+
+
+
