@@ -1,0 +1,13 @@
+[*] streams :
+
+#  0  -  stdin   →  Takes input (usually from keyboard)
+#  1  -  stdout  →  Shows normal output (like command results)
+#  2  -  stderr  →  Shows error messages (like "file not found")
+
+Using this streams
+
+$ ls -l 1> filename      		# using standard output  this will work as it is valid , ls -l will list long format and redirect it using 
+$ cat pancackes 2> filename      	# since the file does not actually exist it will redirect the output to the file , beacuse file not found an output will be created that's why 
+$ cat < filename  			# takes input from file instead of keyboard
+$ cat 0< filename
+

@@ -2,7 +2,8 @@
 
 Create a `.tar` archive
 
-$ tar cvf archive.tar file_or_folder
+$ tar -cvf archive.tar file_or_folder
+$ tar -cvzf archive.tar file_folder
 
 Extract `.tar` archive
 
