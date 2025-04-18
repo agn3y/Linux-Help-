@@ -1,0 +1,11 @@
+cpio - copy files to and from archives
+
+we can use this when we are copying somethimg specific, uniq or important 
+
+$ ls | cpio -ov > filename.cpio		# finame.cpio has result of ls
+$ mv filename.cpio /tmp			# mv to tmp
+$ cpio -iv < filename.cpio		# more like decompressing
+
+Example :  
+
+$ find . -type f -name "*.txt" | cpio -ov > veryspecific.cpio
