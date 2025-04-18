@@ -37,4 +37,9 @@ Output :
 7
 
 
+Another Example :
 
+$ ls -l > filename.txt 2> error.txt  OR
+$ ls -l 1> filename.txt 2> error.txt 
+# It works like an if else statement if the first condition which is ls -l would not work it will use {2 stderr} and populate error.txt
+# However, in our case it will work beacuse our working eviorment is set in such way first condition will not fail 
