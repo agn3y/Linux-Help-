@@ -1,0 +1,8 @@
+[*] pgrep :
+
+$ pgrep processname		# process name and returns PID
+$ pgrep lsmd 			# returns PID of lsmd process
+
+[*] pkill :
+
+$ pkill "process_id"		# to kill process
