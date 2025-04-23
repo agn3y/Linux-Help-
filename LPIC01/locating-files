@@ -1,3 +1,5 @@
+[#] locate :
+
 - To install locate command we can use 
 $ sudo dnf install epel-release -y
 $ sudo dnf install mlocate -y
@@ -18,7 +20,24 @@ $ time locate *.py	# locate py files and also tell how much time does it took
 [2] PRUNEFS				# directories will be updated when we update the database
 	
 
-[#]	find :
+[#] find :
 
 $ find / -name *.py	# does look forpy in root directory
 
+
+[#] whereis :
+- locates the binary, source, and manual pages for a command
+
+$ whereis tree
+
+
+[#] which :
+- locates the command itself
+
+$ which tree
+
+
+[#] type :
+- it displays information about type of command
+
+$ type tree
