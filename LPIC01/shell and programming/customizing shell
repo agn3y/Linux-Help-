@@ -27,3 +27,14 @@ To make things permanent we need to modify .bashrc file
 
 and then we can use alias as we have dine before but in bashrc which will make this var able to survive reboots and also work in different terminals
 
+and then update bashrc you may use
+
+$ source .bashrc
+$ . .bashrc
+
+or close terminal and reopen
+
+To modify or add custom script as command we can also update $PATH
+
+$ export PATH=$PATH:/home/agn3y/myscript		
+# this will add myscript folder to PATH var so every time we use our custome command system will look in the defined directory just like it does for all the other defined directories in the PATH variables
