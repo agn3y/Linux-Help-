@@ -1,7 +1,0 @@
-#DNS - Domain Name System
-
-# Use nslookup to find ip of website
-#
-# $ nslookup google.com
-
-
