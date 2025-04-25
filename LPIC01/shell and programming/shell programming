@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Quick example of assigning a variable
+NAME="AGNEY_PATEL"
+echo $NAME
+
+# Change variable value
+NAME="agn3y"
+echo $NAME
+
+# Take input from user
+echo "Please enter your name: "
+read NAME
+echo "The name you entered is: $NAME"
+
+# Including conditional logic
+echo "What would you like to eat?"
+echo -e "1. VADAPAV\n2. PAVBHAJI"
+read CHOICE
+
+if [[ $CHOICE == 1 ]]; then
+    echo "You Have Chosen VADAPAV"
+fi
+
+if [[ $CHOICE == 2 ]]; then
+    echo "You Have Chosen PAVBHAJI"
+fi
