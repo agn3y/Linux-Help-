@@ -20,8 +20,21 @@ read CHOICE
 
 if [[ $CHOICE == 1 ]]; then
     echo "You Have Chosen VADAPAV"
+elif [[ $CHOICE == 2 ]]; then
+    echo "You Have Chosen PAVBHAJI"
+else
+    echo "Invalid choice"
 fi
 
-if [[ $CHOICE == 2 ]]; then
-    echo "You Have Chosen PAVBHAJI"
+# if, elif and else logic
+echo "Kaisan ba?"
+echo -e "1. Bihari\n2. Bhojpuri"
+read CHOICE2
+
+if [[ $CHOICE2 == 1 ]]; then
+    echo "Bihari selected"
+elif [[ $CHOICE2 == 2 ]]; then
+    echo "Mai ke chodo"
+else
+    echo "Invalid selection"
 fi
