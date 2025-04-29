@@ -1,0 +1,5 @@
+# Use this to display language
+$ echo $LANG
+
+# Use locale to see information 
+$ locale 
