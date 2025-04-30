@@ -18,6 +18,7 @@ $ timedatectl set-timezone Asia/Kolkata
 # One important file which could be helpfll
 $ /etc/localtime   # it's just a symlink which points too
 $ /usr/share/zonesinfo
+$ /etc/timezone		# Holds timezone information for many zones But not for all systems
 
 # we can also use this one commannd
 $ man tzselect
