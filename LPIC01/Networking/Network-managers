@@ -22,3 +22,5 @@ $ nmcli con delete "Galaxy"
 To add connection manually
 $ nmcli con add con-name "Wired Connection 1" type ethernet ip4 192.168.32.55/24 gw4 192.168.32.1 ifname ens01 autoconnect yes
 
+To use interactive mode
+$ nmcli con edit 
